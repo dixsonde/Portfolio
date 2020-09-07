@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tacking Bugs</title>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bug.css"> 
+</head>
+<body>
+  <h1>Bug Tracker</h1>
+  <!-- Form to add new issue to able -->
+ <div>
+    <p>Issue number </p> <span>0</span><br></br>
+    <label for="site">Site/App</label>
+    <input id ="site" type="text"> <br></br> 
+    <label for="date">Date</label>
+    <input id ="dailyDate" type="date"><br></br>
+    <label for="issue">Issue</label>
+    <input id ="issue" type="text"><br></br>
+    <label for="solution">Solution</label>
+    <input id ="solution" type="text"><br></br>
+    <button id ="addStuff" >Add</button><br></br>
+  </div>
+  <!-- Display table -->
+  <div class= "container">
+  <table class="editTable2">
+  <thead>
+    <tr>
+      <strong><th>Site</th></strong>
+    <strong><th>Date</th></strong>
+    <strong><th>Issue</th></strong>
+  <strong><th>Solution</th></strong>
+  </tr>
+</thead>
+
+<tbody id ="addData" >
+  <tr>
+  <td>Blog</td>
+  <td>8-22-20</td>
+  <td>EventListener Not a Function error</td>
+  <td>Switch from let to var. Needed "." for queryselect class.</td>
+</tr>
+<tr>
+  <td>ScoreGame</td>
+  <td>8-22-20</td>
+  <td>The value "s" for key "width" is invalid, and has been ignored.</td>
+  <td>meta width = s in error.  Updated metadata</td>
+</tr>
+<tr>
+  <td>Blog</td>
+  <td>8-23-20</td>
+  <td>Card is overriding grid.</td>
+  <td>Link to Bootstrap missing at the top. http://stackpath.bootstrapcdn.</td>
+</tr>
+<tr>
+  <td>Blog</td>
+  <td>9-01-20</td>
+  <td>New picture Will not load to page.</td>
+  <td>Unknown</td>
+</tr>
+<tr>
+  <td>Blog</td>
+  <td>9-01-20</td>
+  <td>Make Admin update load to blog landing page.</td>
+  <td>Unknown</td>
+</tr>
+<tr>
+  <td>BlogAdmin</td>
+  <td>9-01-20</td>
+  <td>Password Authentication issue.</td>
+  <td>Unknown</td>
+</tr>
+<tr>
+  <td>Portfolio Landing Page</td>
+  <td>9-02-20</td>
+  <td>Space inbetween background image and bottom div at pad size</td>
+  <td>made botom div 40% top margin to fix issue</td>
+</tr>
+<tr>
+  <td>Portfolio Landing Page</td>
+  <td>9-02-20</td>
+  <td>After fixing space between element. Now unspected white space right</td>
+  <td>overflow hidden in html element. hieght of background 100%</td>
+</tr>
+<tr>
+  <td>AboutMe Page</td>
+  <td>9-02-20</td>
+  <td>Personal picture will not show on the page</td>
+  <td>.jpg was shown as name instead of extension</td>
+</tr>
+<tr>
+
+  <td>AboutMe Page</td>
+  <td>9-02-20</td>
+  <td>Picture cut off image</td>
+  <td>Needed to resize the image seperate from sizing div. Also Object-fit: cover; will stop stretching.</td>
+</tr>
+</tbody>
+  </table>
+</div>
+</div>
+<script src="bug.js"></script>
+</body>
+</html>
